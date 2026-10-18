@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Shubham Mishra Portfolio
 
-## Getting Started
+A modern Next.js portfolio built for a clean, professional online presence and ready for GitHub-hosted deployment.
 
-First, run the development server:
+## Features
+
+- Responsive portfolio landing page
+- Premium dark theme with gradient accents
+- About, project, skills, experience, and contact sections
+- GitHub-friendly static export configuration
+- Framer Motion animation polish
+
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Build for production
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+npm run build
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The static output will be generated in the `out/` directory.
 
-## Learn More
+## Deploy to GitHub Pages
 
-To learn more about Next.js, take a look at the following resources:
+1. Push this project to a GitHub repository.
+2. In your GitHub repo settings, enable GitHub Pages.
+3. Choose the static site source from the generated `out/` folder or deploy using a static hosting pipeline.
+4. If needed, set the repo name as the base path in the deployment settings.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customize content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Update the text in:
 
-## Deploy on Vercel
+- `components/Hero.tsx`
+- `pages/index.tsx`
+- `components/Header.tsx`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You can also replace the sample email and social links with your real portfolio details.
